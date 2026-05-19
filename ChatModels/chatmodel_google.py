@@ -10,4 +10,4 @@ Gmodel = ChatGoogleGenerativeAI(model="gemini-3-flash-preview", temperature=1.5,
 # now invoking th method of the google generative ai chatmodel
 results = Gmodel.invoke("write 5 chinese local names")
 
-print(results)
+print(results.content)
