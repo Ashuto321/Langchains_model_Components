@@ -7,7 +7,7 @@ load_dotenv()
 embedding = OpenAIEmbeddings(model="text-embedding-3-small", dimensions=32)
 
 # creating the embedding for the query
-embedding_creation = embedding.query("what is the capital of china?")
+embedding_creation = embedding.embed_query("what is the capital of china?")
 
 # printing them
 print(str(embedding_creation))
